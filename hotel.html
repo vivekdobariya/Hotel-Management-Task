@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Hotel Page</title>
+</head>
+
+<body>
+    <div class="booking-container">
+        <div class="container mt-4 mb-3">
+            <form action="">
+                <h1 class="text-center mb-3 text-primary">Hotel Booking</h1>
+                <div class="input-container form-group mb-2">
+                    <select id="hotelname" required>
+                        <option value="" disabled selected hidden>Select Hotel</option>
+                        <option value="taj hotel">Taj Hotel</option>
+                        <option value="the gateway hotel">The Gateway Hotel</option>
+                        <option value="rambagh palace">Rambagh Palace</option>
+                        <option value="essentia luxury hotel">Essentia Luxury Hotel</option>
+                        <option value="novotel gomti nagar">Novotel Gomti Nagar</option>
+                        <option value="sea shell neil">Sea Shell Neil</option>
+                        <option value="the royal suite">The Royal Suite</option>
+                        <option value="pragati resorts">Pragati Resorts</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2" for="">Check in</label>
+                    <input id="checkin" type="date" placeholder="DD MM YYYY" required>
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2" for="">Check Out</label>
+                    <input id="checkout" type="date" placeholder="DD MM YYYY" required>
+                </div>
+
+                <div class="mb-2">
+                    <label class="mb-2" for="">Adults</label>
+                    <input id="adult" type="number" value="1" required>
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2" for="">Kids</label>
+                    <input id="kid" type="number" value="0" required>
+                </div>
+                <div class="search-btn mt-2 text-center">
+                    <button class="mt-2 btn btn-primary button">Search Availability</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-4" id="hotel-container">
+        <div class="row d-flex justify-content-around">
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="taj hotel">Taj Hotel</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="the gateway hotel">The Gateway Hotel</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="rambagh palace">Rambagh Palace</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel11.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="essentia luxury hotel">Essentia Luxury Hotel</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-around mt-3">
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="novotel gomti nagar">Novotel Gomti Nagar</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="sea shell neil">Sea Shell Neil</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel7.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="the royal suite">The Royal Suite</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+            <div class="card col-md-4 mt-3 hotel-card" style="width: 18rem;">
+                <img class="card-img-top" src="images/hotel8.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="pragati resorts">Pragati Resorts</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary hotel-card">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/hotel.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

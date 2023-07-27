@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="container heading mt-4">
+            <img class="profile" src="fonts/person-circle.svg" alt="">
+            <button class="btn btn-danger float-end log-out">Logout</button>
+        </div>
+        <div class="indide-container container mt-4">
+            <h2 class="mb-4 text-center text-primary mt-3">Welcome to Your Profile</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th scope="col">S. No.</th>
+                            <th scope="col">Hotel Name</th>
+                            <th scope="col">Check-in</th>
+                            <th scope="col">Check-out</th>
+                            <th scope="col">Adults</th>
+                            <th scope="col">Kids</th>
+                            <th scope="col">Selected Rooms</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="profiledata">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

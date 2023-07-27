@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Hoteldetail Page</title>
+</head>
+
+<body>
+    <div class="hoteldetail-container">
+        <div class="container mt-4">
+            <h1 class="text-center mb-4" id="hotel-title"></h1>
+            <div class="row">
+                <div class="col-md-3 mt-4">
+                    <div class="container bookingform" id="bookingform">
+                        <form action="">
+                            <h3 class="text-center mb-3 text-primary">Hotel Booking</h3>
+                            <div class="input-container form-group mb-2">
+                                <select id="hotelname" required>
+                                    <option value="" disabled selected hidden>Select Hotel</option>
+                                    <option value="taj hotel">Taj Hotel</option>
+                                    <option value="the gateway hotel">The Gateway Hotel</option>
+                                    <option value="rambagh palace">Rambagh Palace</option>
+                                    <option value="essentia luxury hotel">Essentia Luxury Hotel</option>
+                                    <option value="novotel gomti nagar">Novotel Gomti Nagar</option>
+                                    <option value="sea shell neil">Sea Shell Neil</option>
+                                    <option value="the royal suite">The Royal Suite</option>
+                                    <option value="pragati resorts">Pragati Resorts</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2" for="">Check in</label>
+                                <input id="checkin" type="date" placeholder="DD MM YYYY" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2" for="">Check Out</label>
+                                <input id="checkout" type="date" placeholder="DD MM YYYY" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="mb-2" for="">Adults</label>
+                                <input id="adult" type="number" value="1" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2" for="">Kids</label>
+                                <input id="kid" type="number" value="0" required>
+                            </div>
+                            <div class="mt-3">
+                                <label class="mb-2" for="">Selected Rooms:- <span id="selectroom"></span></label>
+                            </div>
+                            <div class="search-btn text-center">
+                                <button type="submit" class="mt-2 btn btn-primary button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-9 mt-4">
+                    <div class="container hotel-intro">
+                        <div class="container">
+                            <h2 class="text-primary mb-3">Hotel Details</h2>
+                            <h5>Why to book Hotels Online with Us</h5>
+                            <p class="text-capitalize text-justify text-secondary fs-6 lh-lg">Lorem, ipsum dolor sit
+                                amet consectetur adipisicing elit. Laboriosam, dignissimos! Omnis voluptas aperiam
+                                reiciendis nihil sapiente libero beatae corporis nisi deleniti accusamus, nemo culpa
+                                dolores itaque quos quidem enim ipsam delectus dolorum possimus debitis soluta dolor
+                                commodi eaque. Vitae minus, earum in provident voluptatum officiis? Cumque non et
+                                corporis suscipit tempora cum odio quos asperiores dolores minus provident assumenda
+                                incidunt, quasi possimus enim, qui at facilis, sed delectus laboriosam iste? Quaerat
+                                debitis commodi inventore, numquam quis aut reiciendis totam fuga hic ipsum, laudantium
+                                incidunt repellat pariatur nostrum dignissimos architecto natus fugiat? Unde, excepturi
+                                est natus consequuntur delectus expedita magni qui ad, provident molestiae eum? Iste
+                                cupiditate odit facere odio voluptates autem delectus esse voluptatem placeat
+                                exercitationem laboriosam saepe suscipit, ut, ex impedit fugiat, quidem culpa? Doloribus
+                                excepturi, sed rerum optio, maxime quia possimus similique dolor animi explicabo, ad
+                                officiis. Accusantium.
+                            </p>
+                        </div>
+                        <div class="container roomsdetail d-flex justify-content-between mt-4">
+                            <h4>Total Rooms:- 20</h4>
+                            <h4>Available Rooms:- <span id="availableroom"></span></h4>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#centeredModal">
+                                Book Rooms
+                            </button>
+
+                            <div class="modal fade" id="centeredModal" tabindex="-1"
+                                aria-labelledby="centeredModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="centeredModalLabel">Select Rooms</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row mb-4 mt-2">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 1</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 2</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 3</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 4</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 5</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 6</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 7</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 8</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 9</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 10</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 11</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 12</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 13</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 14</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 15</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 16</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 17</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 18</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 19</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-block">Room 20</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary roombutton">Save
+                                                changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/hoteldetail.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

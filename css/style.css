@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Mukta:wght@300;400&family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.parent-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.main-container {
+    width: calc(100vw - 70vw);
+    background: #f6f6ff;
+    border-radius: 10px;
+    padding: 35px 40px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.main-container h1 {
+    font-size: 45px;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+}
+
+h1 span,
+h2 span {
+    color: #2196F3;
+}
+
+.main-container input {
+    width: 100%;
+    padding: 14px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1521);
+    outline: none;
+    background: transparent;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.main-container select {
+    width: 100%;
+    padding: 14px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1521);
+    outline: none;
+    background: transparent;
+    margin-bottom: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.submit-button button {
+    padding: 10px 30px;
+    background-color: #429dc6;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.account-container {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.account-container a {
+    text-decoration: none;
+    color: #2196F3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.booking-container {
+    margin-bottom: 5rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.booking-container .container {
+    background: #f6f6ff;
+    width: 400px;
+    padding: 22px;
+    border-radius: 5px 8px;
+}
+
+.booking-container .container form select,
+input {
+    width: 100%;
+    padding: 10px;
+    color: #9b9b9b;
+    border: 1px solid rgba(0, 0, 0, 0.1521);
+    outline: none;
+    background: transparent;
+}
+
+.bookingform form select {
+    width: 100%;
+    padding: 10px;
+    color: #9b9b9b;
+    border: 1px solid rgba(0, 0, 0, 0.1521);
+    outline: none;
+    background: transparent;
+}
+
+.booking-container .container h1 {
+    font-variant: small-caps;
+}
+
+.hoteldetail-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+.hoteldetail-container form {
+    background: #f6f6ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hoteldetail-container .col-md-9 .hotel-intro {
+    background: #f6f6ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.col-md-9 .roomsdetail {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.profile-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 20px;
+}
+
+.parent-container .heading {
+    margin-bottom: 5rem !important;
+}
+
+.profile-container .indide-container {
+    background: #f6f6ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 4rem !important;
+}
+
+.profile{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .main-container {
+        width: calc(100vw - 30vw);
+    }
+}
