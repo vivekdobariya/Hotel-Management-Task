@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const roomButtons = document.querySelectorAll(".modal-body button");
     roomButtons.forEach((button) => {
-        button.addEventListener("click", toggleRoomSelection);
+        button.addEventListener("click", (e)=>{
+            e.target.classList.toggle("active");
+        });
     });
 
     const bookingForm = document.getElementById("bookingform");
@@ -67,20 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const toggleRoomSelection = (e) => {
-    e.target.classList.toggle("active");
-
-    const selectedRooms = document.querySelectorAll(".modal-body button.active")
-    const selectedRoomNumbers = Array.from(selectedRooms).map((room) => room.innerText);
-    selectedRoomsContainer = selectedRoomNumbers.join(", ");
-}
-
 const saveRoomChanges = () => {
     let totalRooms = 20;
     const selectedRooms = document.querySelectorAll(".modal-body button.active");
     const selectedRoomNumbers = Array.from(selectedRooms).map((room) => room.innerText);
 
-    const selectedRoomsContainer = document.getElementById("selectroom");
+    const selectedRoomsContainer = document.getElementById("selectroom");   
     selectedRoomsContainer.innerText = selectedRoomNumbers.join(", ");
     const availableRoomsContainer = document.getElementById("availableroom");
     availableRoomsContainer.innerText = totalRooms - selectedRoomNumbers.length;
